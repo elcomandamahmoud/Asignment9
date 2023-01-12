@@ -19,6 +19,12 @@ namespace Asignment9
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textBox1.Text.Trim()))
+            {
+                MessageBox.Show("لا يمكن ترك مكان الكتابة فارغا");
+                textBox1.Focus();
+                return;
+            }
             if (int.Parse(textBox1.Text.Trim()) >= 0 && int.Parse(textBox1.Text.Trim()) <= 49)
             {
                 MessageBox.Show("للأسف، أنت راسب، حظ أوفر في العام القادم");
