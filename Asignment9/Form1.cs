@@ -19,23 +19,23 @@ namespace Asignment9
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (int.Parse(textBox1.Text.Trim()) >= 0 || int.Parse(textBox1.Text.Trim()) <= 49)
+            if (int.Parse(textBox1.Text.Trim()) >= 0 && int.Parse(textBox1.Text.Trim()) <= 49)
             {
                 MessageBox.Show("للأسف، أنت راسب، حظ أوفر في العام القادم");
             }
-           else if (int.Parse(textBox1.Text.Trim()) >= 50 || int.Parse(textBox1.Text.Trim()) <= 64)
+           else if (int.Parse(textBox1.Text.Trim()) >= 50 && int.Parse(textBox1.Text.Trim()) <= 64)
             {
                 MessageBox.Show("مقبول، حاول تحسين مستواك في العام القادم");
             }
-           else if (int.Parse(textBox1.Text.Trim()) >= 65 || int.Parse(textBox1.Text.Trim()) <= 80)
+           else if (int.Parse(textBox1.Text.Trim()) >= 65 && int.Parse(textBox1.Text.Trim()) <= 80)
             {
                 MessageBox.Show("جيد، حاول الاجتهاد أكثر لكي تصل إلى تقدير أعلى في العام القادم");
             }
-           else if (int.Parse(textBox1.Text.Trim()) >= 81 || int.Parse(textBox1.Text.Trim()) <= 90)
+           else if (int.Parse(textBox1.Text.Trim()) >= 81 && int.Parse(textBox1.Text.Trim()) <= 90)
             {
                 MessageBox.Show("جيد جدا، أحسنت، ننصحك بالاجتهاد أكثر لكي تصل إلى الممتاز");
             }
-           else if (int.Parse(textBox1.Text.Trim()) >= 91 || int.Parse(textBox1.Text.Trim()) <= 100)
+           else if (int.Parse(textBox1.Text.Trim()) >= 91 && int.Parse(textBox1.Text.Trim()) <= 100)
             {
                 MessageBox.Show("ممتاز، أحسنت");
             }
